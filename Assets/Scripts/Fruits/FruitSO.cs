@@ -4,7 +4,7 @@ using UnityEngine.UI;
 namespace Fruits
 {
     [CreateAssetMenu(fileName = "Fruit", menuName = "Fruits/Fruit")]
-    public class Fruit : ScriptableObject
+    public class FruitSO : ScriptableObject
     {
         [Header("Fruit ID")]
         [SerializeField] private string fruitId;
@@ -13,7 +13,7 @@ namespace Fruits
         [SerializeField] private Image fruitImage;
         
         [Header("Seed Price Attribute")]
-        [Range(1, 15)]
+        [Range(1, 30)]
         [SerializeField] private int seedUnitPrice;
 
         [Header("Fruit Grow Attribute")]
@@ -21,7 +21,7 @@ namespace Fruits
         [SerializeField] private int fruitGrowCycle;
 
         [Header("Fruit Sell Price Attribute")]
-        [Range(1, 20)]
+        [Range(1, 50)]
         [SerializeField] private int fruitSellUnitPrice;
         
         [Header("Fruit Sell Exp Attribute")]
@@ -31,5 +31,13 @@ namespace Fruits
         [Header("Fruit Unlock Level Attribute")]
         [Range(1, 10)]
         [SerializeField] private int fruitUnlockLevel;
+        
+        [Header("Fruit Harvest Count Down Attribute")]
+        [Range(1, 60)]
+        [SerializeField] private int fruitharvestCount;
+        
+        [Header("Fruit Pest Fail Deduct Coin Attribute")]
+        [Range(1, 50)]
+        [SerializeField] private int fruitpestFailDeductCoin;
     }
 }

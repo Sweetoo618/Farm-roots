@@ -1,18 +1,17 @@
 using Farmer;
+using Rules.LevelRules;
 using UnityEngine;
 
 namespace Rules
 {
     public class LevelUpRule : MonoBehaviour
     {
-        private static readonly int[] LevelUpExpValCheckArr = {
-            30, 70, 100, 130, 180, 200, 240, 260, 300
-        };
-
+        
         public void LevelUpRuleFunction()
         {
             int currentFarmerLevel = GetComponent<FarmerAttribute>().GetFarmerLevel();
-            int currentFarmerCheckExpVal = LevelUpExpValCheckArr[currentFarmerLevel];
+            string levelKey = $"Level{currentFarmerLevel}ToLevel{currentFarmerLevel + 1}";
+            if (!LevelConfig.LevelUpExpConfig.TryGetValue(levelKey, out int currentFarmerCheckExpVal)) return;
             int currentFarmerExpVal = GetComponent<FarmerAttribute>().GetFarmerExpVal();
             if (CheckCanLevelUp(currentFarmerExpVal, currentFarmerCheckExpVal))
             {

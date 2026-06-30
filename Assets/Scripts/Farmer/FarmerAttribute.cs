@@ -45,5 +45,10 @@ namespace Farmer
         {
             farmerLevel++;
         }
+
+        public void InitializeFarmerCoinNumber()
+        {
+            farmerCoinNumber = 100;
+        }
     }
 }
