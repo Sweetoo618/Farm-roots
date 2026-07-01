@@ -16,10 +16,14 @@ namespace Farmer
         [Header("Farmer Level Attribute")]
         [SerializeField] private int farmerLevel;
         
+        [Header("Farmer Have Helper Number Attribute")]
+        [SerializeField] private int farmerHaveHelperNumber;
+        
         public float FarmerMoveSpeed => farmerMoveSpeed;
         public int FarmerCoinNumber => farmerCoinNumber;
         public int FarmerExpVal => farmerExpVal;
         public int FarmerLevel => farmerLevel;
+        public int FarmerHaveHelperNumber => farmerHaveHelperNumber;
 
         public float GetfarmerMoveSpeed()
         {
@@ -41,14 +45,29 @@ namespace Farmer
             return FarmerLevel;
         }
 
-        public void AddFarmerLevel()
+        public int GetFarmerHaveHelperNumber()
         {
-            farmerLevel++;
+            return FarmerHaveHelperNumber;
         }
 
         public void InitializeFarmerCoinNumber()
         {
             farmerCoinNumber = 100;
+        }
+
+        public void InitializeFarmerHaveHelperNumber()
+        {
+            farmerHaveHelperNumber = 0;
+        }
+        
+        public void AddFarmerLevel()
+        {
+            farmerLevel++;
+        }
+
+        public void AddFarmerHaveHelperNumber()
+        {
+            farmerHaveHelperNumber++;
         }
     }
 }

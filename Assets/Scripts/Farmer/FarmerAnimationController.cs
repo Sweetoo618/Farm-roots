@@ -19,6 +19,5 @@ namespace Farmer
         {
             _farmerAnimator.SetFloat(_farmerMoveSpeedHash, farmerMoveSpeed);
         }
-        
     }
 }

@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace UI.CircleImage
 {
     public class CircleImage : MaskableGraphic
     {
         [Header("Circle Radius Attribute")]
-        [Range(0.1f, 100f)]
+        [Range(0.1f, 200f)]
         [SerializeField] private float radius = 50f;
         
         [Header("Circle Segments Attribute")]
