@@ -50,24 +50,9 @@ namespace Farmer
             return FarmerHaveHelperNumber;
         }
 
-        public void InitializeFarmerCoinNumber()
-        {
-            farmerCoinNumber = 100;
-        }
-
-        public void InitializeFarmerHaveHelperNumber()
-        {
-            farmerHaveHelperNumber = 0;
-        }
-        
         public void AddFarmerLevel()
         {
             farmerLevel++;
-        }
-
-        public void AddFarmerHaveHelperNumber()
-        {
-            farmerHaveHelperNumber++;
         }
     }
 }

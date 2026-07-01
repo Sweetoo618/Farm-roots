@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af327312668e41a586e45f4f811a8ebd, type: 3}
   m_Name: Helper_Wade
   m_EditorClassIdentifier: 
-  helperName: 
-  helperDescription: 
-  isMaleHelper: 0
+  helperName: Wade
+  helperDescription: "\u5B88\u62A4\u8005\u3001\u534F\u52A9\u8005"
+  isMaleHelper: 1
   helperImage: {fileID: 0}
   helperUnlockLevel: 0
   helperPrice: 0

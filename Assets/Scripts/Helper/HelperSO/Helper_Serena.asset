@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af327312668e41a586e45f4f811a8ebd, type: 3}
   m_Name: Helper_Serena
   m_EditorClassIdentifier: 
-  helperName: 
-  helperDescription: 
+  helperName: Serena
+  helperDescription: "\u914D\u5408\u578B\u3001\u534F\u4F5C\u611F"
   isMaleHelper: 0
   helperImage: {fileID: 0}
   helperUnlockLevel: 0

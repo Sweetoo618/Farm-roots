@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af327312668e41a586e45f4f811a8ebd, type: 3}
   m_Name: Helper_Stella
   m_EditorClassIdentifier: 
-  helperName: 
-  helperDescription: 
+  helperName: Stella
+  helperDescription: "\u52A9\u529B\u8005"
   isMaleHelper: 0
   helperImage: {fileID: 0}
   helperUnlockLevel: 0
