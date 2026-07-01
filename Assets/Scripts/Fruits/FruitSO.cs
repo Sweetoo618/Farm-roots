@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Fruits
 {
-    [CreateAssetMenu(fileName = "Fruit", menuName = "Fruits/Fruit")]
+    [CreateAssetMenu(fileName = "Fruit", menuName = "ScriptableObjects/Fruit")]
     public class FruitSO : ScriptableObject
     {
         [Header("Fruit ID")]
